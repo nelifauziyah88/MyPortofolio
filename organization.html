@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organization</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23f0faf0'/><text x='6' y='50' font-family='Georgia,serif' font-size='44' font-weight='700' fill='%23388e3c' letter-spacing='-3'>NF</text><path d='M9 56 Q32 51 55 56' fill='none' stroke='%2366bb6a' stroke-width='1.4' stroke-linecap='round'/></svg>" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/organization.css" />
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="toast" id="toast"></div>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <text x="4" y="34" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#388e3c"
+                    letter-spacing="-2">NF</text>
+                <path d="M6 38 Q22 34 38 38" fill="none" stroke="#66bb6a" stroke-width="0.9" stroke-linecap="round" />
+            </svg>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="organization.html" class="active">Organization</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="org-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-lines">
+            <svg viewBox="0 0 1440 900" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,300 Q360,180 720,280 T1440,220" fill="none" stroke="rgba(102,187,106,0.12)"
+                    stroke-width="1.5" />
+                <path d="M0,400 Q360,320 720,400 T1440,340" fill="none" stroke="rgba(102,187,106,0.08)"
+                    stroke-width="1" />
+                <path d="M0,500 Q360,440 720,500 T1440,460" fill="none" stroke="rgba(178,223,219,0.1)"
+                    stroke-width="1" />
+                <circle cx="160" cy="160" r="80" fill="none" stroke="rgba(102,187,106,0.1)" stroke-width="1" />
+                <circle cx="160" cy="160" r="140" fill="none" stroke="rgba(102,187,106,0.06)" stroke-width="1" />
+                <circle cx="1280" cy="700" r="100" fill="none" stroke="rgba(178,223,219,0.12)" stroke-width="1" />
+                <circle cx="1280" cy="700" r="170" fill="none" stroke="rgba(178,223,219,0.06)" stroke-width="1" />
+            </svg>
+        </div>
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span></span>
+                Organization
+                <span></span>
+            </div>
+            <h1 class="hero-title">My <em>Organizational</em> Journey</h1>
+            <p class="hero-sub">
+                Growing through collaboration, leadership, and real-world experience in student organizations.
+            </p>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <section id="org-experience">
+        <div class="exp-bg"></div>
+        <svg class="exp-deco" width="340" height="600" viewBox="0 0 340 600" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0 Q170 150 20 300 Q170 450 20 600" stroke="#66bb6a" stroke-width="1.5" />
+            <path d="M60 0 Q210 150 60 300 Q210 450 60 600" stroke="#66bb6a" stroke-width="1" />
+            <path d="M100 0 Q250 150 100 300 Q250 450 100 600" stroke="#66bb6a" stroke-width="0.5" />
+            <path d="M140 0 Q290 150 140 300 Q290 450 140 600" stroke="#66bb6a" stroke-width="0.3" />
+        </svg>
+        <div class="exp-content">
+            <div class="reveal">
+                <div class="section-label">Experience</div>
+                <h2 class="section-title">Organization Experience</h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal" data-delay="0">
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke="#388e3c" stroke-width="1.6" />
+                            <path d="M8 12l3 3 5-6" stroke="#66bb6a" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div class="timeline-card-org">
+                                <div class="org-badge org-badge-bem">
+                                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16">
+                                        <path d="M10 2l2 6h6l-5 3.6 2 6L10 14l-5 3.6 2-6L2 8h6L10 2z" stroke="#388e3c"
+                                            stroke-width="1.3" stroke-linejoin="round" />
+                                    </svg>
+                                    BEM
+                                </div>
+                                <div>
+                                    <h3 class="timeline-org-name">BEM Politeknik Negeri Batam</h3>
+                                    <p class="timeline-role">Staff of Partnership Relations Department — Ministry of
+                                        Foreign Affairs</p>
+                                </div>
+                            </div>
+                            <div class="timeline-period">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="13"
+                                    height="13">
+                                    <rect x="2" y="3" width="12" height="11" rx="2" stroke="#66bb6a"
+                                        stroke-width="1.2" />
+                                    <path d="M5 3V1.5M11 3V1.5" stroke="#66bb6a" stroke-width="1.2"
+                                        stroke-linecap="round" />
+                                    <path d="M2 6.5h12" stroke="#66bb6a" stroke-width="1.2" />
+                                </svg>
+                                Feb 2025 – Feb 2026
+                            </div>
+                        </div>
+                        <p class="timeline-desc">
+                            Contributed as a staff member in the Department of Partnership Relations under the Ministry
+                            of Foreign Affairs at BEM Politeknik Negeri Batam. Supported external communication and
+                            collaboration initiatives, assisted in coordinating partnerships, and contributed to the
+                            implementation of organizational programs and activities.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="t-tag">Partnership Relations</span>
+                            <span class="t-tag">External Communication</span>
+                            <span class="t-tag">Organizational Programs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal" data-delay="150">
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke="#388e3c" stroke-width="1.6" />
+                            <path d="M8 12l3 3 5-6" stroke="#66bb6a" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div class="timeline-card-org">
+                                <div class="org-badge org-badge-hmti">
+                                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16">
+                                        <rect x="3" y="3" width="14" height="14" rx="3" stroke="#388e3c"
+                                            stroke-width="1.3" />
+                                        <path d="M7 10h6M10 7v6" stroke="#66bb6a" stroke-width="1.3"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    HMTI
+                                </div>
+                                <div>
+                                    <h3 class="timeline-org-name">HMTI Fair Committee</h3>
+                                    <p class="timeline-role">Event Division</p>
+                                </div>
+                            </div>
+                            <div class="timeline-period">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="13"
+                                    height="13">
+                                    <rect x="2" y="3" width="12" height="11" rx="2" stroke="#66bb6a"
+                                        stroke-width="1.2" />
+                                    <path d="M5 3V1.5M11 3V1.5" stroke="#66bb6a" stroke-width="1.2"
+                                        stroke-linecap="round" />
+                                    <path d="M2 6.5h12" stroke="#66bb6a" stroke-width="1.2" />
+                                </svg>
+                                Oct 2024 – Nov 2024
+                            </div>
+                        </div>
+                        <p class="timeline-desc">
+                            Served as a member of the Event Division for HMTI Fair, contributing to the planning,
+                            coordination, and implementation of event activities. Collaborated with other committee
+                            members to support the successful execution of the event and maintain an organized flow of
+                            activities.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="t-tag">Event Planning</span>
+                            <span class="t-tag">Coordination</span>
+                            <span class="t-tag">Teamwork</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="org-moments">
+        <div class="moments-bg"></div>
+        <div class="moments-grid-lines"></div>
+        <div class="moments-content">
+            <div class="reveal">
+                <div class="section-label">Gallery</div>
+                <h2 class="section-title">Organization Moments</h2>
+                <p class="moments-sub">A glimpse of meaningful experiences and memories from organizational activities.
+                </p>
+            </div>
+
+            <div class="moments-grid">
+
+                <div class="moment-card reveal" data-delay="0">
+                    <div class="moment-img-wrap">
+                        <img src="assets/hmtifair.jpeg" alt="HMTI Fair 2024"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                        <div class="moment-img-fallback">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40"
+                                height="40">
+                                <rect x="6" y="10" width="36" height="28" rx="4" stroke="#66bb6a" stroke-width="1.6" />
+                                <circle cx="17" cy="21" r="4" stroke="#a5d6a7" stroke-width="1.4" />
+                                <path d="M6 32l10-8 8 6 6-5 12 9" stroke="#66bb6a" stroke-width="1.4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>hmtifair.jpeg</span>
+                        </div>
+                        <div class="moment-overlay">
+                            <div class="moment-overlay-tag">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="12"
+                                    height="12">
+                                    <rect x="2" y="3" width="12" height="11" rx="2" stroke="currentColor"
+                                        stroke-width="1.2" />
+                                    <path d="M2 6.5h12" stroke="currentColor" stroke-width="1.2" />
+                                    <circle cx="5.5" cy="9.5" r="1" fill="currentColor" />
+                                    <circle cx="8" cy="9.5" r="1" fill="currentColor" />
+                                </svg>
+                                November 24, 2024
+                            </div>
+                        </div>
+                    </div>
+                    <div class="moment-body">
+                        <div class="moment-org-badge moment-badge-hmti">HMTI Fair</div>
+                        <h3 class="moment-title">HMTI Fair 2024</h3>
+                        <p class="moment-desc">
+                            Participated in HMTI Fair 2024 as part of the Event Division committee. This experience
+                            helped me learn about event planning, teamwork, coordination, and responsibility in managing
+                            event activities.
+                        </p>
+                        <div class="moment-role-tag">
+                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="13"
+                                height="13">
+                                <circle cx="8" cy="6" r="3" stroke="#388e3c" stroke-width="1.2" />
+                                <path d="M3 14c0-2.76 2.24-5 5-5s5 2.24 5 5" stroke="#388e3c" stroke-width="1.2"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Event Division Committee
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moment-card reveal" data-delay="100">
+                    <div class="moment-img-wrap">
+                        <img src="assets/binlap.jpeg" alt="Bina Lapas Vol. 1"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                        <div class="moment-img-fallback">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40"
+                                height="40">
+                                <rect x="6" y="10" width="36" height="28" rx="4" stroke="#66bb6a" stroke-width="1.6" />
+                                <circle cx="17" cy="21" r="4" stroke="#a5d6a7" stroke-width="1.4" />
+                                <path d="M6 32l10-8 8 6 6-5 12 9" stroke="#66bb6a" stroke-width="1.4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>binlap.jpeg</span>
+                        </div>
+                        <div class="moment-overlay">
+                            <div class="moment-overlay-tag">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="12"
+                                    height="12">
+                                    <rect x="2" y="3" width="12" height="11" rx="2" stroke="currentColor"
+                                        stroke-width="1.2" />
+                                    <path d="M2 6.5h12" stroke="currentColor" stroke-width="1.2" />
+                                    <circle cx="5.5" cy="9.5" r="1" fill="currentColor" />
+                                    <circle cx="8" cy="9.5" r="1" fill="currentColor" />
+                                </svg>
+                                August 6, 2025
+                            </div>
+                        </div>
+                    </div>
+                    <div class="moment-body">
+                        <div class="moment-org-badge moment-badge-bem">BEM</div>
+                        <h3 class="moment-title">Bina Lapas Vol. 1</h3>
+                        <p class="moment-desc">
+                            On August 6th, 2025, I had the opportunity to serve as a formal Master of Ceremony for the
+                            Bina Lapas Vol. 1 work program organized by BEM. This experience helped me improve my public
+                            speaking, communication, and confidence in handling formal events.
+                        </p>
+                        <div class="moment-role-tag">
+                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="13"
+                                height="13">
+                                <circle cx="8" cy="6" r="3" stroke="#388e3c" stroke-width="1.2" />
+                                <path d="M3 14c0-2.76 2.24-5 5-5s5 2.24 5 5" stroke="#388e3c" stroke-width="1.2"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Formal Master of Ceremony
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moment-card reveal" data-delay="200">
+                    <div class="moment-img-wrap">
+                        <img src="assets/jobfair.jpeg" alt="Job Fair"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                        <div class="moment-img-fallback">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40"
+                                height="40">
+                                <rect x="6" y="10" width="36" height="28" rx="4" stroke="#66bb6a" stroke-width="1.6" />
+                                <circle cx="17" cy="21" r="4" stroke="#a5d6a7" stroke-width="1.4" />
+                                <path d="M6 32l10-8 8 6 6-5 12 9" stroke="#66bb6a" stroke-width="1.4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>jobfair.jpeg</span>
+                        </div>
+                        <div class="moment-overlay">
+                            <div class="moment-overlay-tag">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="12"
+                                    height="12">
+                                    <rect x="2" y="3" width="12" height="11" rx="2" stroke="currentColor"
+                                        stroke-width="1.2" />
+                                    <path d="M2 6.5h12" stroke="currentColor" stroke-width="1.2" />
+                                    <circle cx="5.5" cy="9.5" r="1" fill="currentColor" />
+                                    <circle cx="8" cy="9.5" r="1" fill="currentColor" />
+                                </svg>
+                                May 22, 2026
+                            </div>
+                        </div>
+                    </div>
+                    <div class="moment-body">
+                        <div class="moment-org-badge moment-badge-bem">BEM</div>
+                        <h3 class="moment-title">Job Fair</h3>
+                        <p class="moment-desc">
+                            On Friday, May 22nd, 2026, I served as a Liaison Officer during the Job Fair work program
+                            organized by BEM. I assisted and accompanied company representatives, including KB Bank and
+                            PT Aztech Karya Mandiri, connecting job seekers with career opportunities.
+                        </p>
+                        <div class="moment-role-tag">
+                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="13"
+                                height="13">
+                                <circle cx="8" cy="6" r="3" stroke="#388e3c" stroke-width="1.2" />
+                                <path d="M3 14c0-2.76 2.24-5 5-5s5 2.24 5 5" stroke="#388e3c" stroke-width="1.2"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Liaison Officer
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moment-card reveal" data-delay="300">
+                    <div class="moment-img-wrap">
+                        <img src="assets/bemmengajar.jpeg" alt="BEM Mengajar Vol. 3"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                        <div class="moment-img-fallback">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40"
+                                height="40">
+                                <rect x="6" y="10" width="36" height="28" rx="4" stroke="#66bb6a" stroke-width="1.6" />
+                                <circle cx="17" cy="21" r="4" stroke="#a5d6a7" stroke-width="1.4" />
+                                <path d="M6 32l10-8 8 6 6-5 12 9" stroke="#66bb6a" stroke-width="1.4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>bem-mengajar.jpeg</span>
+                        </div>
+                        <div class="moment-overlay">
+                            <div class="moment-overlay-tag">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="12"
+                                    height="12">
+                                    <rect x="2" y="3" width="12" height="11" rx="2" stroke="currentColor"
+                                        stroke-width="1.2" />
+                                    <path d="M2 6.5h12" stroke="currentColor" stroke-width="1.2" />
+                                    <circle cx="5.5" cy="9.5" r="1" fill="currentColor" />
+                                    <circle cx="8" cy="9.5" r="1" fill="currentColor" />
+                                </svg>
+                                December 7, 2025
+                            </div>
+                        </div>
+                    </div>
+                    <div class="moment-body">
+                        <div class="moment-org-badge moment-badge-bem">BEM</div>
+                        <h3 class="moment-title">BEM Mengajar Vol. 3</h3>
+                        <p class="moment-desc">
+                            On December 7th, 2025, I had another opportunity to serve as a formal Master of Ceremony for
+                            the BEM Mengajar Vol. 3 program organized by BEM. This experience further improved my public
+                            speaking, communication, and confidence in managing formal events.
+                        </p>
+                        <div class="moment-role-tag">
+                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="13"
+                                height="13">
+                                <circle cx="8" cy="6" r="3" stroke="#388e3c" stroke-width="1.2" />
+                                <path d="M3 14c0-2.76 2.24-5 5-5s5 2.24 5 5" stroke="#388e3c" stroke-width="1.2"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Formal Master of Ceremony
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="org-cta">
+        <div class="cta-bg"></div>
+        <div class="cta-border-art"></div>
+        <div class="cta-content">
+            <div class="reveal">
+                <div class="section-label" style="justify-content:center">Let's Connect</div>
+                <h2 class="section-title">Open to New <em style="color:var(--g3);font-style:italic">Opportunities</em>
+                </h2>
+            </div>
+            <p class="cta-sub reveal">
+                I'm always open to collaboration, new learning experiences, and contributing to meaningful
+                organizational or community programs.
+            </p>
+            <div class="cta-actions reveal">
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                <a href="project.html" class="btn btn-outline">View My Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            Neli Fauziyah
+            <span>Web Developer &amp; UI/UX Enthusiast</span>
+        </div>
+        <div class="footer-copy">© 2026 Neli Fauziyah. Designed &amp; built with passion.</div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-overlay" id="lightboxOverlay"></div>
+        <div class="lightbox-box">
+            <button class="lightbox-close" id="lightboxClose">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+                    <path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+            </button>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <script src="js/organization.js"></script>
+</body>
+
+</html>

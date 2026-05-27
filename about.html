@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23f0faf0'/><text x='6' y='50' font-family='Georgia,serif' font-size='44' font-weight='700' fill='%23388e3c' letter-spacing='-3'>NF</text><path d='M9 56 Q32 51 55 56' fill='none' stroke='%2366bb6a' stroke-width='1.4' stroke-linecap='round'/></svg>" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/about.css" />
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="toast" id="toast"></div>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <text x="4" y="34" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#388e3c"
+                    letter-spacing="-2">NF</text>
+                <path d="M6 38 Q22 34 38 38" fill="none" stroke="#66bb6a" stroke-width="0.9" stroke-linecap="round" />
+            </svg>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
+            <li><a href="organization.html">Organization</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="about-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-lines">
+            <svg viewBox="0 0 1440 900" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,300 Q360,180 720,280 T1440,220" fill="none" stroke="rgba(102,187,106,0.12)"
+                    stroke-width="1.5" />
+                <path d="M0,400 Q360,320 720,400 T1440,340" fill="none" stroke="rgba(102,187,106,0.08)"
+                    stroke-width="1" />
+                <path d="M0,500 Q360,440 720,500 T1440,460" fill="none" stroke="rgba(178,223,219,0.1)"
+                    stroke-width="1" />
+                <circle cx="160" cy="160" r="80" fill="none" stroke="rgba(102,187,106,0.1)" stroke-width="1" />
+                <circle cx="160" cy="160" r="140" fill="none" stroke="rgba(102,187,106,0.06)" stroke-width="1" />
+                <circle cx="1280" cy="700" r="100" fill="none" stroke="rgba(178,223,219,0.12)" stroke-width="1" />
+                <circle cx="1280" cy="700" r="170" fill="none" stroke="rgba(178,223,219,0.06)" stroke-width="1" />
+            </svg>
+        </div>
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span></span>
+                About Me
+                <span></span>
+            </div>
+            <h1 class="hero-title">Get to Know <em>Me</em></h1>
+            <p class="hero-sub">
+                Hi, I'm Neli Fauziyah, an Informatics student at Politeknik Negeri Batam with a strong interest in web
+                development and UI/UX design.
+            </p>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <section id="intro">
+        <div class="intro-bg"></div>
+        <svg class="intro-deco" width="340" height="600" viewBox="0 0 340 600" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0 Q170 150 20 300 Q170 450 20 600" stroke="#66bb6a" stroke-width="1.5" />
+            <path d="M60 0 Q210 150 60 300 Q210 450 60 600" stroke="#66bb6a" stroke-width="1" />
+            <path d="M100 0 Q250 150 100 300 Q250 450 100 600" stroke="#66bb6a" stroke-width="0.5" />
+            <path d="M140 0 Q290 150 140 300 Q290 450 140 600" stroke="#66bb6a" stroke-width="0.3" />
+        </svg>
+        <div class="intro-grid">
+            <div class="intro-visual reveal">
+                <div class="about-avatar-wrap">
+                    <div class="about-avatar-bg"></div>
+                    <div class="about-initials">
+                        <svg viewBox="0 0 280 300" fill="none" xmlns="http://www.w3.org/2000/svg" width="200"
+                            height="220">
+                            <g fill="#2d7a30">
+                                <path
+                                    d="M38 240 L38 60 L52 60 L148 196 L148 60 L162 60 L162 240 L148 240 L52 104 L52 240 Z" />
+                                <path
+                                    d="M148 60 L240 60 L240 74 L162 74 L162 148 L228 148 L228 162 L162 162 L162 240 L148 240 Z" />
+                            </g>
+                            <path d="M148 56 C148 56 178 30 210 44 C230 54 232 72 220 82 C210 90 196 82 196 68"
+                                fill="none" stroke="#2d7a30" stroke-width="3.5" stroke-linecap="round" />
+                            <path
+                                d="M38 248 C38 248 60 268 88 256 C106 248 108 232 96 226 C84 220 68 228 72 244 C76 256 90 260 90 260"
+                                fill="none" stroke="#2d7a30" stroke-width="3.5" stroke-linecap="round" />
+                            <g transform="translate(222, 168) rotate(-15)">
+                                <path d="M4 20 C4 20 2 8 10 4 C16 1 20 6 18 12 C16 17 10 18 8 14" fill="none"
+                                    stroke="#2d7a30" stroke-width="2.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8 18 C8 18 14 6 24 8 C30 9 31 15 26 18 C21 21 16 18 18 14" fill="none"
+                                    stroke="#2d7a30" stroke-width="2.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M4 20 C6 22 10 26 10 32" fill="none" stroke="#2d7a30" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path d="M16 20 C16 22 14 25 12 28" fill="none" stroke="#2d7a30" stroke-width="1.8"
+                                    stroke-linecap="round" />
+                            </g>
+                            <line x1="70" y1="266" x2="100" y2="266" stroke="#2d7a30" stroke-width="1.2" />
+                            <line x1="168" y1="266" x2="198" y2="266" stroke="#2d7a30" stroke-width="1.2" />
+                            <text x="140" y="272" text-anchor="middle" font-family="Georgia, serif" font-size="15"
+                                font-style="italic" fill="#2d7a30" letter-spacing="2">NeliFauziyah</text>
+                        </svg>
+                    </div>
+                    <div class="about-dots"></div>
+                </div>
+                <div class="intro-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">3.91</span>
+                        <span class="stat-label">GPA</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">6+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">2</span>
+                        <span class="stat-label">Organizations</span>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-text reveal">
+                <div class="section-label">Introduction</div>
+                <h2 class="section-title">A little about <em>myself</em></h2>
+                <p>
+                    I enjoy learning how to create websites that are not only functional, but also interactive,
+                    responsive, and visually engaging. For me, web development is a combination of creativity, logic,
+                    and user experience.
+                </p>
+                <p>
+                    Currently studying Informatics at Politeknik Negeri Batam, I bridge the gap between aesthetics and
+                    functionality, building digital experiences that are not just beautiful, but truly useful.
+                </p>
+                <a href="contact.html" class="btn btn-primary">Let's Connect</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="passion">
+        <div class="passion-bg"></div>
+        <div class="passion-grid-lines"></div>
+        <div class="passion-content">
+            <div class="reveal">
+                <div class="section-label">My Passion</div>
+                <h2 class="section-title">What Drives Me</h2>
+            </div>
+            <div class="passion-cards">
+                <div class="passion-card reveal" data-delay="0">
+                    <div class="passion-card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="10" fill="rgba(102,187,106,0.12)" />
+                            <path d="M14 10L10 38h28l-4-28H14z" fill="none" stroke="#a5d6a7" stroke-width="1.8"
+                                stroke-linejoin="round" />
+                            <path d="M18 18h12M17 24h14M19 30l5 4 5-4" fill="none" stroke="#66bb6a" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="passion-card-title">Web Development</h3>
+                    <p class="passion-card-text">
+                        I have a passion for designing and building digital experiences, especially in the field of web
+                        development. I love exploring frontend design, creating clean layouts, and turning ideas into
+                        websites that are easy and enjoyable to use.
+                    </p>
+                </div>
+                <div class="passion-card reveal" data-delay="150">
+                    <div class="passion-card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="10" fill="rgba(102,187,106,0.12)" />
+                            <rect x="10" y="10" width="13" height="13" rx="3" fill="none" stroke="#66bb6a"
+                                stroke-width="1.8" />
+                            <rect x="25" y="10" width="13" height="13" rx="3" fill="none" stroke="#a5d6a7"
+                                stroke-width="1.8" />
+                            <rect x="10" y="25" width="13" height="13" rx="3" fill="none" stroke="#a5d6a7"
+                                stroke-width="1.8" />
+                            <rect x="25" y="25" width="13" height="13" rx="3" fill="none" stroke="#b2dfdb"
+                                stroke-width="1.8" />
+                            <circle cx="16.5" cy="16.5" r="3" fill="rgba(102,187,106,0.4)" />
+                            <path d="M13 31l2 2 4-4" stroke="#66bb6a" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="passion-card-title">UI/UX Design</h3>
+                    <p class="passion-card-text">
+                        I am also interested in UI/UX design because I believe a good website is not only about how it
+                        looks, but also about how users feel when they interact with it. Creating meaningful and
+                        intuitive experiences is at the heart of what I do.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="edu-bg"></div>
+        <div class="edu-stripes"></div>
+        <div class="edu-content">
+            <div class="reveal">
+                <div class="section-label">Education</div>
+                <h2 class="section-title">Academic Background</h2>
+            </div>
+            <div class="edu-card reveal">
+                <div class="edu-header">
+                    <div>
+                        <div class="edu-school">Politeknik Negeri Batam</div>
+                        <div class="edu-degree">Associate Degree in Informatics</div>
+                    </div>
+                    <div class="edu-meta">
+                        <div class="edu-gpa">3.91</div>
+                        <div class="edu-gpa-label">GPA</div>
+                    </div>
+                </div>
+                <div class="edu-date-badge">Aug 2024 – 2027</div>
+                <div class="edu-activities">
+                    <span class="activity-tag">
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 2C5.24 2 3 4.24 3 7c0 1.86 1.01 3.48 2.5 4.36V13h5v-1.64C12 10.48 13 8.86 13 7c0-2.76-2.24-5-5-5z"
+                                fill="none" stroke="#388e3c" stroke-width="1.3" stroke-linejoin="round" />
+                            <path d="M5.5 13h5" stroke="#388e3c" stroke-width="1.3" stroke-linecap="round" />
+                            <path d="M6 7l1.5 1.5L10 5" stroke="#66bb6a" stroke-width="1.3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        BEM Politeknik — Partnership Relations
+                    </span>
+                    <span class="activity-tag">
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="12" height="11" rx="2" fill="none" stroke="#388e3c"
+                                stroke-width="1.3" />
+                            <path d="M5 3V1.5M11 3V1.5" stroke="#388e3c" stroke-width="1.3" stroke-linecap="round" />
+                            <path d="M2 6.5h12" stroke="#388e3c" stroke-width="1.3" />
+                            <circle cx="5.5" cy="9.5" r="1" fill="#66bb6a" />
+                            <circle cx="8" cy="9.5" r="1" fill="#66bb6a" />
+                            <circle cx="10.5" cy="9.5" r="1" fill="#66bb6a" />
+                        </svg>
+                        HMTI Fair — Event Division Committee
+                    </span>
+                </div>
+                <p class="edu-desc">
+                    I am currently pursuing an Associate Degree in Informatics at Politeknik Negeri Batam. During my
+                    studies, I have been learning about programming, web development, databases, and software
+                    development while continuing to develop my interest in frontend and UI/UX design.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="values">
+        <div class="values-bg"></div>
+        <div class="values-orb values-orb-1"></div>
+        <div class="values-orb values-orb-2"></div>
+        <div class="values-content">
+            <div class="reveal">
+                <div class="section-label">My Values</div>
+                <h2 class="section-title">What I Stand For</h2>
+            </div>
+            <p class="values-intro reveal">
+                I believe that continuous learning is important in the technology field. I always try to improve my
+                skills, explore new ideas, and learn from every project or experience.
+            </p>
+            <div class="values-grid">
+                <div class="value-item reveal" data-delay="0">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4l2.4 7.4H26l-6.2 4.5 2.4 7.4L16 19l-6.2 4.3 2.4-7.4L6 11.4h7.6L16 4z"
+                                stroke="#388e3c" stroke-width="1.6" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h4 class="value-title">Creativity</h4>
+                    <p class="value-text">Exploring new ideas and building unique digital experiences.</p>
+                </div>
+                <div class="value-item reveal" data-delay="100">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="10" stroke="#388e3c" stroke-width="1.6" />
+                            <path d="M16 10v6l4 2" stroke="#66bb6a" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h4 class="value-title">Consistency</h4>
+                    <p class="value-text">Showing up and putting in the work, every single day.</p>
+                </div>
+                <div class="value-item reveal" data-delay="200">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 16l6 6 14-14" stroke="#388e3c" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h4 class="value-title">Responsibility</h4>
+                    <p class="value-text">Taking ownership of my work and delivering with integrity.</p>
+                </div>
+                <div class="value-item reveal" data-delay="300">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="12" r="3" stroke="#388e3c" stroke-width="1.6" />
+                            <circle cx="22" cy="12" r="3" stroke="#388e3c" stroke-width="1.6" />
+                            <path d="M4 24c0-3.31 2.69-6 6-6s6 2.69 6 6" stroke="#388e3c" stroke-width="1.6"
+                                stroke-linecap="round" />
+                            <path d="M22 18c1.1 0 2 .4 2.7 1" stroke="#66bb6a" stroke-width="1.4"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h4 class="value-title">Collaboration</h4>
+                    <p class="value-text">Working with others to create something greater together.</p>
+                </div>
+            </div>
+            <div class="values-goal reveal">
+                <div class="values-goal-inner">
+                    <div class="values-goal-label">
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+                            <circle cx="8" cy="8" r="6" stroke="#388e3c" stroke-width="1.4" />
+                            <circle cx="8" cy="8" r="3" stroke="#66bb6a" stroke-width="1.3" />
+                            <circle cx="8" cy="8" r="1" fill="#388e3c" />
+                        </svg>
+                        My Goal
+                    </div>
+                    <p>
+                        My goal is to keep growing as a Web Developer and create digital products that are useful,
+                        meaningful, and enjoyable for users.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="connect">
+        <div class="connect-bg"></div>
+        <div class="connect-border-art"></div>
+        <div class="connect-content">
+            <div class="reveal">
+                <div class="section-label" style="justify-content:center">Let's Connect</div>
+                <h2 class="section-title">Build Something <em style="color:var(--g3);font-style:italic">Meaningful</em>
+                    Together</h2>
+            </div>
+            <p class="connect-sub reveal">
+                I am always open to learning opportunities, collaboration, and creative projects related to web
+                development, frontend design, and UI/UX. Let's build something meaningful together.
+            </p>
+            <div class="connect-actions reveal">
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                <a href="project.html" class="btn btn-outline">View My Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            Neli Fauziyah
+            <span>Web Developer &amp; UI/UX Enthusiast</span>
+        </div>
+        <div class="footer-copy">© 2026 Neli Fauziyah. Designed &amp; built with passion.</div>
+    </footer>
+
+    <script src="js/about.js"></script>
+</body>
+
+</html>

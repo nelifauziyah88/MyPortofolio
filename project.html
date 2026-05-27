@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23f0faf0'/><text x='6' y='50' font-family='Georgia,serif' font-size='44' font-weight='700' fill='%23388e3c' letter-spacing='-3'>NF</text><path d='M9 56 Q32 51 55 56' fill='none' stroke='%2366bb6a' stroke-width='1.4' stroke-linecap='round'/></svg>" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/project.css" />
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="toast" id="toast"></div>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                <text x="4" y="34" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#388e3c"
+                    letter-spacing="-2">NF</text>
+                <path d="M6 38 Q22 34 38 38" fill="none" stroke="#66bb6a" stroke-width="0.9" stroke-linecap="round" />
+            </svg>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="organization.html">Organization</a></li>
+            <li><a href="project.html" class="active">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+
+    <section id="projects-hero">
+        <div class="hero-lines">
+            <svg viewBox="0 0 1440 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,200 Q360,120 720,200 T1440,160" fill="none" stroke="rgba(102,187,106,0.12)"
+                    stroke-width="1.5" />
+                <path d="M0,300 Q360,240 720,300 T1440,260" fill="none" stroke="rgba(102,187,106,0.08)"
+                    stroke-width="1" />
+                <circle cx="160" cy="120" r="80" fill="none" stroke="rgba(102,187,106,0.1)" stroke-width="1" />
+                <circle cx="160" cy="120" r="140" fill="none" stroke="rgba(102,187,106,0.06)" stroke-width="1" />
+                <circle cx="1280" cy="380" r="100" fill="none" stroke="rgba(178,223,219,0.12)" stroke-width="1" />
+            </svg>
+        </div>
+        <div class="hero-content">
+            <div class="hero-eyebrow"><span></span>Portfolio Projects<span></span></div>
+            <h1 class="hero-title">Things I've <em>Built</em><br>& Shipped</h1>
+            <p class="hero-sub">A collection of academic and personal projects — from marketplaces and platforms to
+                tools and interactive experiences.</p>
+        </div>
+    </section>
+
+    <div id="filter-section" style="padding-top:50px">
+        <div class="filter-bar" id="filterBar">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="academic">Academic / PBL</button>
+            <button class="filter-btn" data-filter="personal">Personal</button>
+        </div>
+    </div>
+
+    <div id="projects-grid">
+        <div class="projects-container" id="projectsContainer">
+
+            <!-- BTC Store -->
+            <div class="project-card reveal" data-category="academic">
+                <div class="card-visual">
+                    <div class="card-visual-bg"></div>
+                    <div class="card-visual-icon">
+                        <img src="assets/btcstore.png" alt="BTC Store" />
+                    </div>
+                    <span class="card-category-badge badge-academic">Academic</span>
+                    <span class="card-status demo">Demo Ready</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">BTC Store</div>
+                    <p class="card-desc">A web-based game top-up marketplace connecting buyers and sellers. Users can
+                        purchase game credits for Free Fire, Mobile Legends, and PUBG Mobile easily and securely.</p>
+                    <div class="card-tech">
+                        <span class="card-tech-tag">PHP Native</span>
+                        <span class="card-tech-tag">MySQL</span>
+                        <span class="card-tech-tag">Bootstrap</span>
+                        <span class="card-tech-tag">JavaScript</span>
+                        <span class="card-tech-tag">XAMPP</span>
+                        <span class="card-tech-tag">Git</span>
+                    </div>
+                    <div class="card-divider"></div>
+                    <div class="card-links" style="padding-top:0.9rem">
+                        <a href="https://github.com/Verrelian/btc-store.git" target="_blank"
+                            class="card-link card-link-gh">
+                            <svg viewBox="0 0 16 16" fill="currentColor">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://youtu.be/i6QhT6-h9Kc?si=gQDxOCuyErIxdnrJ" target="_blank"
+                            class="card-link card-link-demo">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="8" cy="8" r="6.5" />
+                                <path d="M6.5 5.5l4 2.5-4 2.5V5.5z" fill="currentColor" stroke="none" />
+                            </svg>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Venus Cars -->
+            <div class="project-card reveal" data-category="academic" data-delay="100">
+                <div class="card-visual">
+                    <div class="card-visual-bg"></div>
+                    <div class="card-visual-icon">
+                        <img src="assets/venuscars.png" alt="Venus Cars" />
+                    </div>
+                    <span class="card-category-badge badge-academic">Academic</span>
+                    <span class="card-status demo">Demo Ready</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Venus Cars</div>
+                    <p class="card-desc">A web-based car trading platform with browsing, filtering, and purchase options
+                        via cash or credit. Separate dashboards for buyers and sellers with invoice generation.</p>
+                    <div class="card-tech">
+                        <span class="card-tech-tag">PHP</span>
+                        <span class="card-tech-tag">MySQL</span>
+                        <span class="card-tech-tag">Bootstrap</span>
+                        <span class="card-tech-tag">JavaScript</span>
+                    </div>
+                    <div class="card-divider"></div>
+                    <div class="card-links" style="padding-top:0.9rem">
+                        <a href="https://github.com/godlovesmei/PBL_Kelp3_IF2A_Pagi.git" target="_blank"
+                            class="card-link card-link-gh">
+                            <svg viewBox="0 0 16 16" fill="currentColor">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://youtu.be/90eOflVbOpo?si=pqcDv9-X3Y2cobaf" target="_blank"
+                            class="card-link card-link-demo">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="8" cy="8" r="6.5" />
+                                <path d="M6.5 5.5l4 2.5-4 2.5V5.5z" fill="currentColor" stroke="none" />
+                            </svg>
+                            Demo
+                        </a>
+                        <a href="https://youtu.be/YTQ31TIfkBg?si=ERnsNyWfO9BYl3z8" target="_blank"
+                            class="card-link card-link-pres">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="12" height="10" rx="2" />
+                                <path d="M5 14h6M8 12v2" stroke-linecap="round" />
+                            </svg>
+                            Presentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MyInternship -->
+            <div class="project-card reveal" data-category="academic" data-delay="200">
+                <div class="card-visual">
+                    <div class="card-visual-bg"></div>
+                    <div class="card-visual-icon">
+                        <img src="assets/myinternship.png" alt="MyInternship" />
+                    </div>
+                    <span class="card-category-badge badge-academic">Academic</span>
+                    <span class="card-status demo">Demo Ready</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-role">
+                        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4">
+                            <path d="M6 1l1 3h3L7.5 6l1 3L6 7.5 3.5 9l1-3L2 4h3L6 1z" />
+                        </svg>
+                        Project Leader
+                    </div>
+                    <div class="card-title">MyInternship</div>
+                    <p class="card-desc">An internship management platform for the Career Development Center. Handles
+                        applications, approvals, status tracking, email reminders, and data export to Excel.</p>
+                    <div class="card-tech">
+                        <span class="card-tech-tag">PHP Native</span>
+                        <span class="card-tech-tag">Express.js</span>
+                        <span class="card-tech-tag">MySQL</span>
+                        <span class="card-tech-tag">RESTful API</span>
+                        <span class="card-tech-tag">Postman</span>
+                    </div>
+                    <div class="card-divider"></div>
+                    <div class="card-links" style="padding-top:0.9rem">
+                        <a href="https://github.com/nelifauziyah88/myinternship-development.git" target="_blank"
+                            class="card-link card-link-gh">
+                            <svg viewBox="0 0 16 16" fill="currentColor">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://youtu.be/fZsyO1OJvqE?si=cX-QIflStPOsVFTW" target="_blank"
+                            class="card-link card-link-demo">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="8" cy="8" r="6.5" />
+                                <path d="M6.5 5.5l4 2.5-4 2.5V5.5z" fill="currentColor" stroke="none" />
+                            </svg>
+                            Demo
+                        </a>
+                        <a href="https://youtu.be/yV21wmum1r8" target="_blank" class="card-link card-link-pres">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="12" height="10" rx="2" />
+                                <path d="M5 14h6M8 12v2" stroke-linecap="round" />
+                            </svg>
+                            Presentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Geomarketia -->
+            <div class="project-card reveal" data-category="academic" data-delay="300">
+                <div class="card-visual">
+                    <div class="card-visual-bg"></div>
+                    <div class="card-visual-icon">
+                        <img src="assets/geomarketia.png" alt="Geomarketia" />
+                    </div>
+                    <span class="card-category-badge badge-academic">Academic</span>
+                    <span class="card-status progress">In Progress</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Geomarketia</div>
+                    <p class="card-desc">A geospatial market analysis platform integrating GIS, clustering, and
+                        AI-powered insights to help businesses make smarter location-based decisions.</p>
+                    <div class="card-tech">
+                        <span class="card-tech-tag">Next.js</span>
+                        <span class="card-tech-tag">Laravel</span>
+                        <span class="card-tech-tag">Leaflet.js</span>
+                        <span class="card-tech-tag">Tailwind CSS</span>
+                        <span class="card-tech-tag">Midtrans</span>
+                        <span class="card-tech-tag">Figma</span>
+                    </div>
+                    <div class="card-divider"></div>
+                    <div class="card-links" style="padding-top:0.9rem">
+                        <a href="https://github.com/nelifauziyah88/Geomarketia.git" target="_blank"
+                            class="card-link card-link-gh">
+                            <svg viewBox="0 0 16 16" fill="currentColor">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://youtu.be/BKvkmWBjipg" target="_blank" class="card-link card-link-pres">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="12" height="10" rx="2" />
+                                <path d="M5 14h6M8 12v2" stroke-linecap="round" />
+                            </svg>
+                            Presentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KadoKita -->
+            <div class="project-card reveal" data-category="personal" data-delay="0">
+                <div class="card-visual">
+                    <div class="card-visual-bg"></div>
+                    <div class="card-visual-icon">
+                        <img src="assets/kadokita.png" alt="KadoKita" />
+                    </div>
+                    <span class="card-category-badge badge-personal">Personal</span>
+                    <span class="card-status live">Live</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">KadoKita</div>
+                    <p class="card-desc">An online digital greeting gift website. Create personalized digital greetings
+                        and share them with loved ones via a simple link — perfect for any special occasion.</p>
+                    <div class="card-tech">
+                        <span class="card-tech-tag">HTML</span>
+                        <span class="card-tech-tag">CSS</span>
+                        <span class="card-tech-tag">JavaScript</span>
+                    </div>
+                    <div class="card-divider"></div>
+                    <div class="card-links" style="padding-top:0.9rem">
+                        <a href="https://github.com/nelifauziyah88/kadokita.git" target="_blank"
+                            class="card-link card-link-gh">
+                            <svg viewBox="0 0 16 16" fill="currentColor">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://kadokita.my.id/" target="_blank" class="card-link card-link-live">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="8" cy="8" r="6.5" />
+                                <path
+                                    d="M8 1.5C8 1.5 5.5 4 5.5 8s2.5 6.5 2.5 6.5M8 1.5C8 1.5 10.5 4 10.5 8S8 14.5 8 14.5M1.5 8h13"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Live Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CatetCash -->
+            <div class="project-card reveal" data-category="personal" data-delay="100">
+                <div class="card-visual">
+                    <div class="card-visual-bg"></div>
+                    <div class="card-visual-icon">
+                        <img src="assets/catetcash.png" alt="CatetCash" />
+                    </div>
+                    <span class="card-category-badge badge-personal">Personal</span>
+                    <span class="card-status live">Live</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">CatetCash</div>
+                    <p class="card-desc">A lightweight expense tracker for recording daily transactions, setting monthly
+                        budgets, viewing real-time balances, and exporting financial reports to Excel.</p>
+                    <div class="card-tech">
+                        <span class="card-tech-tag">Laravel</span>
+                        <span class="card-tech-tag">PHP</span>
+                        <span class="card-tech-tag">MySQL</span>
+                        <span class="card-tech-tag">Maatwebsite Excel</span>
+                    </div>
+                    <div class="card-divider"></div>
+                    <div class="card-links" style="padding-top:0.9rem">
+                        <a href="https://github.com/nelifauziyah88/CatetCash.git" target="_blank"
+                            class="card-link card-link-gh">
+                            <svg viewBox="0 0 16 16" fill="currentColor">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DumpIt -->
+            <div class="project-card reveal" data-category="personal" data-delay="200">
+                <div class="card-visual">
+                    <div class="card-visual-bg"></div>
+                    <div class="card-visual-icon">
+                        <img src="assets/dumpit.png" alt="DumpIt" />
+                    </div>
+                    <span class="card-category-badge badge-personal">Personal</span>
+                    <span class="card-status live">Live</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">DumpIt</div>
+                    <p class="card-desc">A free web-based scrapbook maker. Upload photos, choose a template, and
+                        generate a personalized flipbook-style scrapbook shareable via a unique link.</p>
+                    <div class="card-tech">
+                        <span class="card-tech-tag">HTML</span>
+                        <span class="card-tech-tag">CSS</span>
+                        <span class="card-tech-tag">JavaScript</span>
+                        <span class="card-tech-tag">PHP</span>
+                        <span class="card-tech-tag">MySQL</span>
+                    </div>
+                    <div class="card-divider"></div>
+                    <div class="card-links" style="padding-top:0.9rem">
+                        <a href="https://github.com/nelifauziyah88/DumpIt.git" target="_blank"
+                            class="card-link card-link-gh">
+                            <svg viewBox="0 0 16 16" fill="currentColor">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://dumpit.my.id" target="_blank" class="card-link card-link-live">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="8" cy="8" r="6.5" />
+                                <path
+                                    d="M8 1.5C8 1.5 5.5 4 5.5 8s2.5 6.5 2.5 6.5M8 1.5C8 1.5 10.5 4 10.5 8S8 14.5 8 14.5M1.5 8h13"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Live Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section id="stats-section">
+        <div class="stats-grid-lines"></div>
+        <div class="stats-grid reveal">
+            <div class="stat-item">
+                <span class="stat-num">7</span>
+                <span class="stat-label">Total Projects</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-num">4</span>
+                <span class="stat-label">Academic / PBL</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Personal Projects</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-num">2</span>
+                <span class="stat-label">Live Websites</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            Neli Fauziyah
+            <span>Web Developer &amp; UI/UX Enthusiast</span>
+        </div>
+        <div class="footer-copy">© 2026 Neli Fauziyah. Designed &amp; built with passion.</div>
+    </footer>
+
+    <script src="js/project.js"></script>
+</body>
+
+</html>
