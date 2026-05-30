@@ -130,3 +130,10 @@ function showToast(message) {
   setTimeout(() => toast.classList.remove("show"), 2800);
 }
 window.showToast = showToast;
+
+document.querySelectorAll(".moment-card").forEach((card) => {
+  card.addEventListener("click", (e) => {
+    const desc = card.querySelector(".moment-desc");
+    desc.classList.toggle("expanded");
+  });
+});

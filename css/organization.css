@@ -801,6 +801,19 @@ section {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.moment-card:hover .moment-desc {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}
+
+.moment-desc.expanded {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
 }
 
 .moment-role-tag {
