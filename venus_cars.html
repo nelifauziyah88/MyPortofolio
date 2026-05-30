@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venus Cars</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23f0faf0'/><text x='6' y='50' font-family='Georgia,serif' font-size='44' font-weight='700' fill='%23388e3c' letter-spacing='-3'>NF</text></svg>" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/btc_store.css" />
+</head>
+
+<body>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                <text x="4" y="34" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#388e3c"
+                    letter-spacing="-2">NF</text>
+                <path d="M6 38 Q22 34 38 38" fill="none" stroke="#66bb6a" stroke-width="0.9" stroke-linecap="round" />
+            </svg>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="organization.html">Organization</a></li>
+            <li><a href="project.html" class="active">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+
+    <main class="page-wrapper">
+        <div class="article-container">
+
+            <a href="project.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M10 3L5 8l5 5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Back to Projects
+            </a>
+
+            <header class="article-header">
+                <div class="header-badges">
+                    <span class="badge badge-cat">Academic / PBL</span>
+                    <span class="badge badge-status">Completed</span>
+                </div>
+                <h1 class="article-title">Venus <em>Cars</em></h1>
+                <p class="article-lead">An elegant and trustworthy car buying and selling platform, designed to deliver
+                    the best experience for buyers and sellers with a modern, easy-to-use interface.</p>
+                <div class="header-tags">
+                    <span class="tech-chip">Laravel</span>
+                    <span class="tech-chip">PHP</span>
+                    <span class="tech-chip">MySQL</span>
+                    <span class="tech-chip">Vite</span>
+                    <span class="tech-chip">Tailwind CSS</span>
+                </div>
+                <div class="header-actions">
+                    <a href="https://github.com/godlovesmei/PBL_Kelp3_IF2A_Pagi.git" target="_blank"
+                        class="action-btn btn-dark">
+                        <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://youtu.be/90eOflVbOpo?si=IFfk2PXlao8Hxa6i" target="_blank"
+                        class="action-btn btn-green">
+                        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="8" cy="8" r="6.5" />
+                            <path d="M6.5 5.5l4 2.5-4 2.5V5.5z" fill="currentColor" stroke="none" />
+                        </svg>
+                        Demo
+                    </a>
+                    <a href="https://youtu.be/YTQ31TIfkBg?si=Alf9yOsh26cwAynS" target="_blank"
+                        class="action-btn btn-outline">
+                        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="2" width="12" height="10" rx="2" />
+                            <path d="M5 14h6M8 12v2" stroke-linecap="round" />
+                        </svg>
+                        Presentation
+                    </a>
+                </div>
+            </header>
+
+            <div class="meta-strip">
+                <div class="meta-item">
+                    <span class="meta-label">Type</span>
+                    <span class="meta-value">Academic / PBL</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                    <span class="meta-label">Platform</span>
+                    <span class="meta-value">Web (All Devices)</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                    <span class="meta-label">Database</span>
+                    <span class="meta-value">MySQL</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                    <span class="meta-label">Roles</span>
+                    <span class="meta-value">Seller &amp; Buyer</span>
+                </div>
+            </div>
+
+            <div class="poster-block reveal">
+                <p class="poster-label">Landing Page Preview</p>
+                <div class="poster-frame">
+                    <img src="assets/gambar_venuscars.png" alt="Venus Cars Landing Page"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                    <div class="poster-fallback">
+                        <svg viewBox="0 0 64 64" fill="none" width="48" height="48">
+                            <rect x="6" y="12" width="52" height="36" rx="5" stroke="#66bb6a" stroke-width="1.6" />
+                            <circle cx="22" cy="27" r="5" stroke="#a5d6a7" stroke-width="1.4" />
+                            <path d="M6 40l14-10 10 8 8-7 18 13" stroke="#66bb6a" stroke-width="1.4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>assets/gambar_venuscars.png</span>
+                        <span class="fallback-note">Landing page screenshot</span>
+                    </div>
+                </div>
+                <p class="poster-caption">Venus Cars — Landing Page</p>
+            </div>
+
+            <div class="poster-block reveal">
+                <p class="poster-label">Project Poster</p>
+                <div class="poster-frame">
+                    <img src="assets/poster_venuscars.png" alt="Venus Cars Poster"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                    <div class="poster-fallback">
+                        <svg viewBox="0 0 64 64" fill="none" width="48" height="48">
+                            <rect x="6" y="12" width="52" height="36" rx="5" stroke="#66bb6a" stroke-width="1.6" />
+                            <circle cx="22" cy="27" r="5" stroke="#a5d6a7" stroke-width="1.4" />
+                            <path d="M6 40l14-10 10 8 8-7 18 13" stroke="#66bb6a" stroke-width="1.4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>assets/poster_venuscars.png</span>
+                        <span class="fallback-note">Project poster</span>
+                    </div>
+                </div>
+                <p class="poster-caption">Venus Cars — Project Poster</p>
+            </div>
+
+            <div class="poster-block reveal">
+                <p class="poster-label">Use Case Diagram</p>
+                <div class="poster-frame">
+                    <img src="assets/use_case1.png" alt="Venus Cars Use Case Diagram"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                    <div class="poster-fallback">
+                        <svg viewBox="0 0 64 64" fill="none" width="48" height="48">
+                            <rect x="6" y="12" width="52" height="36" rx="5" stroke="#66bb6a" stroke-width="1.6" />
+                            <circle cx="22" cy="27" r="5" stroke="#a5d6a7" stroke-width="1.4" />
+                            <path d="M6 40l14-10 10 8 8-7 18 13" stroke="#66bb6a" stroke-width="1.4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>assets/use_case1.png</span>
+                        <span class="fallback-note">Use case diagram</span>
+                    </div>
+                </div>
+                <p class="poster-caption">Venus Cars — Use Case Diagram</p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <section class="content-section reveal">
+                <div class="section-marker">A</div>
+                <div class="section-body">
+                    <h2>General Description</h2>
+                    <p>Venus Cars is an elegant and trustworthy car buying and selling platform, specifically designed
+                        to
+                        deliver the best experience for both buyers and sellers. With a modern and easy-to-use
+                        interface,
+                        the application makes it easy for users to find their dream car or sell their vehicle quickly,
+                        safely, and conveniently.</p>
+                    <p>A wide range of car categories is available, including <strong>SUV, MPV, Sedan, and
+                            Sport</strong>,
+                        as well as popular models such as Honda Mobilio, HR-V, Civic Type R, and New Honda City.</p>
+                    <p>The system supports two primary user roles, namely <em>Seller</em> and <em>Buyer</em>, with the
+                        following workflow:</p>
+                    <ul class="article-list">
+                        <li><strong>App Access</strong> — Displays the main page, car categories, and a list of cars for
+                            sale.</li>
+                        <li><strong>Search &amp; Filter</strong> — Users can browse by category or type a car name such
+                            as "HR-V" or "New Honda City".</li>
+                        <li><strong>View Car Details</strong> — Users can view complete information including images,
+                            price, and description.</li>
+                        <li><strong>Register / Login</strong> — To buy or sell a car, users must register or log in
+                            first.</li>
+                        <li><strong>Contact Seller</strong> — After logging in, buyers can directly contact the seller
+                            or dealer via WhatsApp.</li>
+                        <li><strong>Complete Transaction</strong> — Transactions can be made in cash or on credit,
+                            subject to agreement between buyer and seller.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content-section reveal">
+                <div class="section-marker">B</div>
+                <div class="section-body">
+                    <h2>Functional &amp; Non-Functional Requirements</h2>
+
+                    <h3>a. Functional Requirements</h3>
+                    <div class="table-wrap">
+                        <table class="req-table">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Code</th>
+                                    <th>Actor</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="mono">FR-1</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Register a new account</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="mono">FR-2</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Log in using email and password</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="mono">FR-3</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Manage profile (view, edit, save)</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="mono">FR-4</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Change account password</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="mono">FR-5</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Manage products (view, filter, add, edit, delete)</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="mono">FR-6</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Manage exterior and interior product images</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td class="mono">FR-7</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>View and filter incoming orders</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td class="mono">FR-8</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Verify order status from buyers</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td class="mono">FR-9</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>View and filter payment history</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td class="mono">FR-10</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Verify payments (down payment and cash)</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td class="mono">FR-11</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>View and filter buyer installment lists</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td class="mono">FR-12</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Verify installments paid by buyers</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td class="mono">FR-13</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Manage car brochures (view, search, add, edit, delete)</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td class="mono">FR-14</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Manage dashboard and filter sales information</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td class="mono">FR-15</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Analyze sales performance in chart format</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td class="mono">FR-16</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Log out of account</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td class="mono">FR-17</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>View list of available and unavailable cars</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td class="mono">FR-18</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Search products by brand, model, specifications, and year</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td class="mono">FR-19</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Filter products by category and price</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td class="mono">FR-20</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Simulate cash or credit payment</td>
+                                </tr>
+                                <tr>
+                                    <td>21</td>
+                                    <td class="mono">FR-21</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>View brochures for all car models</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td class="mono">FR-22</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Contact seller via WhatsApp link</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td class="mono">FR-23</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Register a new account</td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td class="mono">FR-24</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Log in to the system</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td class="mono">FR-25</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Manage profile and personal account information</td>
+                                </tr>
+                                <tr>
+                                    <td>26</td>
+                                    <td class="mono">FR-26</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Change account password</td>
+                                </tr>
+                                <tr>
+                                    <td>27</td>
+                                    <td class="mono">FR-27</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Manage wishlist (view, add, delete)</td>
+                                </tr>
+                                <tr>
+                                    <td>28</td>
+                                    <td class="mono">FR-28</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Submit a car purchase (cash or credit)</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td class="mono">FR-29</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>View details of submitted orders</td>
+                                </tr>
+                                <tr>
+                                    <td>30</td>
+                                    <td class="mono">FR-30</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Make down payment, installment, or full cash payment</td>
+                                </tr>
+                                <tr>
+                                    <td>31</td>
+                                    <td class="mono">FR-31</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Download payment invoice in digital format</td>
+                                </tr>
+                                <tr>
+                                    <td>32</td>
+                                    <td class="mono">FR-32</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>View purchase history (cash and credit)</td>
+                                </tr>
+                                <tr>
+                                    <td>33</td>
+                                    <td class="mono">FR-33</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Log out of account</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>b. Non-Functional Requirements</h3>
+                    <div class="nfr-grid">
+                        <div class="nfr-item">
+                            <div class="nfr-icon">
+                                <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
+                                    <path d="M4 4h12v10H4z" stroke="#388e3c" stroke-width="1.3" />
+                                    <path d="M7 8h6M7 11h4" stroke="#66bb6a" stroke-width="1.2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="nfr-title">Source Code</div>
+                                <p class="nfr-desc">Well-structured, easy to maintain, and follows coding conventions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="nfr-item">
+                            <div class="nfr-icon">
+                                <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
+                                    <rect x="3" y="3" width="14" height="14" rx="3" stroke="#388e3c"
+                                        stroke-width="1.3" />
+                                    <path d="M7 10h6M10 7v6" stroke="#66bb6a" stroke-width="1.2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="nfr-title">UI/UX</div>
+                                <p class="nfr-desc">The interface must be user-friendly and easy to use for both buyers
+                                    and sellers.</p>
+                            </div>
+                        </div>
+                        <div class="nfr-item">
+                            <div class="nfr-icon">
+                                <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
+                                    <path d="M3 10a7 7 0 1014 0A7 7 0 003 10z" stroke="#388e3c" stroke-width="1.3" />
+                                    <path d="M10 6v4l3 2" stroke="#66bb6a" stroke-width="1.2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="nfr-title">Intuitive Navigation</div>
+                                <p class="nfr-desc">The user interface is intuitive and easy to navigate.</p>
+                            </div>
+                        </div>
+                        <div class="nfr-item">
+                            <div class="nfr-icon">
+                                <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
+                                    <rect x="2" y="5" width="10" height="8" rx="1.5" stroke="#388e3c"
+                                        stroke-width="1.3" />
+                                    <rect x="13" y="7" width="5" height="6" rx="1" stroke="#66bb6a"
+                                        stroke-width="1.2" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="nfr-title">Multi-Device</div>
+                                <p class="nfr-desc">Accessible on all devices: Laptop/PC, Tablet, and Mobile Phone.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section reveal">
+                <div class="section-marker">C</div>
+                <div class="section-body">
+                    <h2>System Modeling</h2>
+                    <p>The use case diagram illustrates the interaction flow between the two main actors, namely
+                        <em>Buyer</em> and <em>Seller</em>, with the VenusCars system.
+                    </p>
+
+                    <div class="role-block">
+                        <div class="role-header">
+                            <div class="role-icon role-icon-seller">
+                                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="#388e3c"
+                                        stroke-width="1.5" stroke-linejoin="round" />
+                                    <path d="M9 22V12h6v10" stroke="#66bb6a" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="role-name">Seller</div>
+                                <div class="role-sub">Admin — Full Access</div>
+                            </div>
+                        </div>
+                        <p>The seller is responsible for managing product data and car images, verifying orders and
+                            payments, and monitoring sales performance.</p>
+                        <p class="access-label">Access Rights</p>
+                        <ul class="article-list">
+                            <li>Manage product data and car images (exterior &amp; interior).</li>
+                            <li>View and verify incoming orders from buyers.</li>
+                            <li>Verify cash payments, down payments, and installments.</li>
+                            <li>Manage car brochures and access the sales dashboard.</li>
+                            <li>Analyze sales performance based on statistical data.</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-block role-block-buyer">
+                        <div class="role-header">
+                            <div class="role-icon role-icon-buyer">
+                                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                                    <circle cx="12" cy="8" r="4" stroke="#2e7d72" stroke-width="1.5" />
+                                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#4db6ac" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="role-name role-name-buyer">Buyer</div>
+                                <div class="role-sub">End User — Limited Access</div>
+                            </div>
+                        </div>
+                        <p>Buyers can search and view car information, register and log in, and manage the purchase
+                            process through to payment.</p>
+                        <p class="access-label">Access Rights</p>
+                        <ul class="article-list">
+                            <li><strong>Search &amp; Filter:</strong> search products by brand, model, specifications,
+                                year, category, and price.</li>
+                            <li><strong>Wishlist:</strong> save and manage a list of favorite cars.</li>
+                            <li><strong>Purchase:</strong> submit a cash or credit purchase and view payment
+                                simulations.</li>
+                            <li><strong>Payment:</strong> pay down payment, installments, or full cash and download a
+                                digital invoice.</li>
+                            <li><strong>Contact Seller:</strong> reach the seller directly via WhatsApp.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-name">
+            Neli Fauziyah
+            <span>Web Developer &amp; UI/UX Enthusiast</span>
+        </div>
+        <div class="footer-copy">&copy; 2026 Neli Fauziyah. Designed &amp; built with passion.</div>
+    </footer>
+
+    <script src="js/btc_store.js"></script>
+</body>
+
+</html>

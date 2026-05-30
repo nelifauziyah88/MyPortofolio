@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTC Store</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23f0faf0'/><text x='6' y='50' font-family='Georgia,serif' font-size='44' font-weight='700' fill='%23388e3c' letter-spacing='-3'>NF</text></svg>" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/btc_store.css" />
+</head>
+
+<body>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                <text x="4" y="34" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#388e3c"
+                    letter-spacing="-2">NF</text>
+                <path d="M6 38 Q22 34 38 38" fill="none" stroke="#66bb6a" stroke-width="0.9" stroke-linecap="round" />
+            </svg>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="organization.html">Organization</a></li>
+            <li><a href="project.html" class="active">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+
+    <main class="page-wrapper">
+
+        <div class="article-container">
+
+            <a href="project.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M10 3L5 8l5 5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Back to Projects
+            </a>
+
+            <header class="article-header">
+                <div class="header-badges">
+                    <span class="badge badge-cat">Academic / PBL</span>
+                    <span class="badge badge-status">Completed</span>
+                </div>
+                <h1 class="article-title">BTC <em>Store</em></h1>
+                <p class="article-lead">A web-based game top-up marketplace connecting buyers and sellers. Users can
+                    purchase game credits for Free Fire, Mobile Legends, and PUBG Mobile easily and securely.</p>
+                <div class="header-tags">
+                    <span class="tech-chip">HTML</span>
+                    <span class="tech-chip">CSS</span>
+                    <span class="tech-chip">JavaScript</span>
+                    <span class="tech-chip">PHP</span>
+                    <span class="tech-chip">MySQL</span>
+                </div>
+                <div class="header-actions">
+                    <a href="https://github.com/Verrelian/btc-store.git" target="_blank" class="action-btn btn-dark">
+                        <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://youtu.be/i6QhT6-h9Kc?si=gQDxOCuyErIxdnrJ" target="_blank"
+                        class="action-btn btn-green">
+                        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="8" cy="8" r="6.5" />
+                            <path d="M6.5 5.5l4 2.5-4 2.5V5.5z" fill="currentColor" stroke="none" />
+                        </svg>
+                        Demo
+                    </a>
+                    <a href="https://youtu.be/X7S7dQz3k-g?si=rI29u-gMIg1Ispek" target="_blank"
+                        class="action-btn btn-outline">
+                        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="2" width="12" height="10" rx="2" />
+                            <path d="M5 14h6M8 12v2" stroke-linecap="round" />
+                        </svg>
+                        Presentation
+                    </a>
+                </div>
+            </header>
+
+            <div class="meta-strip">
+                <div class="meta-item">
+                    <span class="meta-label">Type</span>
+                    <span class="meta-value">Academic / PBL</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                    <span class="meta-label">Platform</span>
+                    <span class="meta-value">Web (PC / Laptop)</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                    <span class="meta-label">Database</span>
+                    <span class="meta-value">MySQL</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                    <span class="meta-label">Roles</span>
+                    <span class="meta-value">Seller &amp; Buyer</span>
+                </div>
+            </div>
+
+            <div class="poster-block reveal">
+                <p class="poster-label">Landing Page Preview</p>
+                <div class="poster-frame">
+                    <img src="assets/gambar_btc.jpg" alt="BTC Store Landing Page"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                    <div class="poster-fallback">
+                        <svg viewBox="0 0 64 64" fill="none" width="48" height="48">
+                            <rect x="6" y="12" width="52" height="36" rx="5" stroke="#66bb6a" stroke-width="1.6" />
+                            <circle cx="22" cy="27" r="5" stroke="#a5d6a7" stroke-width="1.4" />
+                            <path d="M6 40l14-10 10 8 8-7 18 13" stroke="#66bb6a" stroke-width="1.4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>assets/gambar_btc.jpg</span>
+                        <span class="fallback-note">Landing page screenshot</span>
+                    </div>
+                </div>
+                <p class="poster-caption">BTC Store — Landing Page</p>
+            </div>
+
+            <div class="poster-block reveal">
+                <p class="poster-label">Project Poster</p>
+                <div class="poster-frame">
+                    <img src="assets/poster_btc.png" alt="BTC Store Poster"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                    <div class="poster-fallback">
+                        <svg viewBox="0 0 64 64" fill="none" width="48" height="48">
+                            <rect x="6" y="12" width="52" height="36" rx="5" stroke="#66bb6a" stroke-width="1.6" />
+                            <circle cx="22" cy="27" r="5" stroke="#a5d6a7" stroke-width="1.4" />
+                            <path d="M6 40l14-10 10 8 8-7 18 13" stroke="#66bb6a" stroke-width="1.4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>assets/poster_btc.png</span>
+                        <span class="fallback-note">Project poster</span>
+                    </div>
+                </div>
+                <p class="poster-caption">BTC Store — Project Poster</p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <section class="content-section reveal">
+                <div class="section-marker">A</div>
+                <div class="section-body">
+                    <h2>General Description</h2>
+                    <p>Project-Based Learning (PBL) is a learning approach where students learn through real-world
+                        project exploration. In PBL, students collaborate in teams, conduct research, and present
+                        project results — working on projects that are relevant and meaningful.</p>
+                    <p>The project developed is a <strong>Web-Based Game Top-Up Marketplace</strong>, accessible only
+                        via PC or laptop connected to the database through an internet connection. Application users are
+                        divided into two main roles: <em>seller</em> and <em>buyer</em>.</p>
+                    <ul class="article-list">
+                        <li>The seller can manage and control all data within the system.</li>
+                        <li>The buyer can sign up, log in, browse the website, and make purchases.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content-section reveal">
+                <div class="section-marker">B</div>
+                <div class="section-body">
+                    <h2>User Stories</h2>
+
+                    <h3>a. Functional Requirements</h3>
+                    <div class="table-wrap">
+                        <table class="req-table">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Code</th>
+                                    <th>Actor</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="mono">FR-1</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Can register a new account (Sign Up)</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="mono">FR-2</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Can log in to an existing account (Log In)</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="mono">FR-3</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Can edit their profile</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="mono">FR-4</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Can reset password without OTP verification</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="mono">FR-5</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Can browse available game top-up products</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="mono">FR-6</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Can purchase a game top-up by selecting a payment method</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td class="mono">FR-7</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Can view order details</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td class="mono">FR-8</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Can view transaction receipt</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td class="mono">FR-9</td>
+                                    <td><span class="actor-badge actor-buyer">Buyer</span></td>
+                                    <td>Can log out from their account</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td class="mono">FR-10</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Can log in as seller to access the seller dashboard</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td class="mono">FR-11</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Can add new products</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td class="mono">FR-12</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Can edit product details (price)</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td class="mono">FR-13</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Can delete products</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td class="mono">FR-14</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Can manage product categories</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td class="mono">FR-15</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Can view logged-in users and monitor transactions</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td class="mono">FR-16</td>
+                                    <td><span class="actor-badge actor-seller">Seller</span></td>
+                                    <td>Can view system error and bug reports</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>b. Non-Functional Requirements</h3>
+                    <div class="nfr-grid">
+                        <div class="nfr-item">
+                            <div class="nfr-icon">
+                                <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
+                                    <path d="M4 4h12v10H4z" stroke="#388e3c" stroke-width="1.3" />
+                                    <path d="M7 8h6M7 11h4" stroke="#66bb6a" stroke-width="1.2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="nfr-title">Source Code</div>
+                                <p class="nfr-desc">Well-structured and easy to maintain by different developers,
+                                    following standard conventions.</p>
+                            </div>
+                        </div>
+                        <div class="nfr-item">
+                            <div class="nfr-icon">
+                                <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
+                                    <rect x="3" y="3" width="14" height="14" rx="3" stroke="#388e3c"
+                                        stroke-width="1.3" />
+                                    <path d="M7 10h6M10 7v6" stroke="#66bb6a" stroke-width="1.2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="nfr-title">UI/UX</div>
+                                <p class="nfr-desc">Interface must be intuitive and easy to use for both buyers and
+                                    sellers.</p>
+                            </div>
+                        </div>
+                        <div class="nfr-item">
+                            <div class="nfr-icon">
+                                <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
+                                    <path d="M3 10a7 7 0 1014 0A7 7 0 003 10z" stroke="#388e3c" stroke-width="1.3" />
+                                    <path d="M10 6v4l3 2" stroke="#66bb6a" stroke-width="1.2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="nfr-title">Responsiveness</div>
+                                <p class="nfr-desc">Runs smoothly and intended for use on Laptop/PC devices only.</p>
+                            </div>
+                        </div>
+                        <div class="nfr-item">
+                            <div class="nfr-icon">
+                                <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
+                                    <path d="M10 3l2 5h5l-4 3 1.5 5L10 13l-4.5 3L7 11 3 8h5L10 3z" stroke="#388e3c"
+                                        stroke-width="1.3" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="nfr-title">Scalability</div>
+                                <p class="nfr-desc">Supports addition of new products and users over time.</p>
+                            </div>
+                        </div>
+                        <div class="nfr-item">
+                            <div class="nfr-icon">
+                                <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
+                                    <rect x="3" y="7" width="5" height="10" rx="1.5" stroke="#388e3c"
+                                        stroke-width="1.3" />
+                                    <rect x="10" y="3" width="5" height="14" rx="1.5" stroke="#66bb6a"
+                                        stroke-width="1.3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="nfr-title">Modular Design</div>
+                                <p class="nfr-desc">Easy to update and add products without affecting existing features.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="nfr-item">
+                            <div class="nfr-icon">
+                                <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
+                                    <path d="M10 2l1.5 4h4l-3.2 2.3 1.2 4L10 10l-3.5 2.3 1.2-4L4.5 6h4L10 2z"
+                                        stroke="#388e3c" stroke-width="1.3" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="nfr-title">User Security</div>
+                                <p class="nfr-desc">Protects user data from unauthorized access.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section reveal">
+                <div class="section-marker">C</div>
+                <div class="section-body">
+                    <h2>User Identification &amp; Access Rights</h2>
+
+                    <div class="role-block">
+                        <div class="role-header">
+                            <div class="role-icon role-icon-seller">
+                                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="#388e3c"
+                                        stroke-width="1.5" stroke-linejoin="round" />
+                                    <path d="M9 22V12h6v10" stroke="#66bb6a" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="role-name">Seller</div>
+                                <div class="role-sub">Admin — Full Access</div>
+                            </div>
+                        </div>
+                        <p>The seller manages all aspects of the system, including transactions and products (game
+                            top-ups).</p>
+                        <p class="access-label">Access Rights</p>
+                        <ul class="article-list">
+                            <li>Product Management: can add, update, or delete game top-up products, including setting
+                                prices and descriptions.</li>
+                            <li>Monitor transactions and track logged-in user activity.</li>
+                            <li>View system error and bug reports.</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-block role-block-buyer">
+                        <div class="role-header">
+                            <div class="role-icon role-icon-buyer">
+                                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                                    <circle cx="12" cy="8" r="4" stroke="#2e7d72" stroke-width="1.5" />
+                                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#4db6ac" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="role-name role-name-buyer">Buyer</div>
+                                <div class="role-sub">End User — Limited Access</div>
+                            </div>
+                        </div>
+                        <p>The buyer is the end user who purchases game top-ups. They have limited access related to
+                            transactions and personal account management.</p>
+                        <p class="access-label">Access Rights</p>
+                        <ul class="article-list">
+                            <li><strong>Place Orders:</strong> browse the game top-up catalog and make purchases.</li>
+                            <li><strong>Account Management:</strong> edit profile information such as email, username,
+                                profile photo, and phone number.</li>
+                            <li><strong>Payment:</strong> pay via QRIS, Dana, GoPay, and BNI.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-name">
+            Neli Fauziyah
+            <span>Web Developer &amp; UI/UX Enthusiast</span>
+        </div>
+        <div class="footer-copy">&copy; 2026 Neli Fauziyah. Designed &amp; built with passion.</div>
+    </footer>
+
+    <script src="js/btc_store.js"></script>
+</body>
+
+</html>

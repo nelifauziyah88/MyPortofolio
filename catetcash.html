@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatetCash — Project</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23f0faf0'/><text x='6' y='50' font-family='Georgia,serif' font-size='44' font-weight='700' fill='%23388e3c' letter-spacing='-3'>NF</text></svg>" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/btc_store.css" />
+    <style>
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .screenshot-item {
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: var(--green-pale);
+        }
+
+        .screenshot-frame {
+            width: 100%;
+            aspect-ratio: 16/10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .screenshot-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .screenshot-fallback {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 1.5rem 1rem;
+        }
+
+        .screenshot-fallback span {
+            font-family: "DM Mono", monospace;
+            font-size: 0.65rem;
+            color: var(--muted-light);
+            text-align: center;
+        }
+
+        .screenshot-caption {
+            font-family: "DM Mono", monospace;
+            font-size: 0.68rem;
+            color: var(--muted);
+            text-align: center;
+            padding: 0.5rem 0.75rem;
+            border-top: 1px solid var(--border);
+            background: var(--white);
+        }
+
+        .stack-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        .stack-table thead tr {
+            background: var(--green-pale);
+        }
+
+        .stack-table th {
+            padding: 0.75rem 0.9rem;
+            text-align: left;
+            font-family: "DM Mono", monospace;
+            font-size: 0.68rem;
+            color: var(--green);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-weight: 500;
+            border-bottom: 1px solid var(--border);
+            white-space: nowrap;
+        }
+
+        .stack-table td {
+            padding: 0.7rem 0.9rem;
+            color: var(--text);
+            font-size: 0.84rem;
+            line-height: 1.5;
+            border-bottom: 1px solid var(--green-pale);
+            vertical-align: middle;
+        }
+
+        .stack-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .stack-table tbody tr:hover {
+            background: #fafff8;
+        }
+
+        .stack-name {
+            font-family: "DM Mono", monospace;
+            font-size: 0.8rem;
+            color: var(--green);
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                <text x="4" y="34" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#388e3c"
+                    letter-spacing="-2">NF</text>
+                <path d="M6 38 Q22 34 38 38" fill="none" stroke="#66bb6a" stroke-width="0.9" stroke-linecap="round" />
+            </svg>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="organization.html">Organization</a></li>
+            <li><a href="project.html" class="active">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+
+    <main class="page-wrapper">
+        <div class="article-container">
+
+            <a href="project.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M10 3L5 8l5 5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Back to Projects
+            </a>
+
+            <header class="article-header">
+                <div class="header-badges">
+                    <span class="badge badge-cat">Personal Project</span>
+                    <span class="badge badge-status">Completed</span>
+                </div>
+                <h1 class="article-title">Catet<em>Cash</em></h1>
+                <p class="article-lead">Simple expense tracker. No hassle, no clutter. Track your daily expenses, set
+                    monthly budgets, and export reports to Excel — all for free.</p>
+                <div class="header-tags">
+                    <span class="tech-chip">Laravel</span>
+                    <span class="tech-chip">MySQL</span>
+                    <span class="tech-chip">PHP</span>
+                </div>
+            </header>
+
+            <div class="meta-strip">
+                <div class="meta-item">
+                    <span class="meta-label">Type</span>
+                    <span class="meta-value">Personal Project</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                    <span class="meta-label">Platform</span>
+                    <span class="meta-value">Web</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                    <span class="meta-label">Database</span>
+                    <span class="meta-value">MySQL</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                    <span class="meta-label">Export</span>
+                    <span class="meta-value">Excel (.xlsx)</span>
+                </div>
+            </div>
+
+            <div class="poster-block reveal">
+                <p class="poster-label">Preview</p>
+                <div class="poster-frame">
+                    <img src="assets/landing1.png" alt="CatetCash Preview"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                    <div class="poster-fallback">
+                        <svg viewBox="0 0 64 64" fill="none" width="48" height="48">
+                            <rect x="6" y="12" width="52" height="36" rx="5" stroke="#66bb6a" stroke-width="1.6" />
+                            <circle cx="22" cy="27" r="5" stroke="#a5d6a7" stroke-width="1.4" />
+                            <path d="M6 40l14-10 10 8 8-7 18 13" stroke="#66bb6a" stroke-width="1.4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>assets/landing1.png</span>
+                        <span class="fallback-note">Website preview screenshot</span>
+                    </div>
+                </div>
+                <p class="poster-caption">CatetCash — Landing Page</p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <section class="content-section reveal">
+                <div class="section-marker">A</div>
+                <div class="section-body">
+                    <h2>About</h2>
+                    <p><strong>CatetCash</strong> started from a simple frustration — most budgeting apps are too
+                        complex and cluttered. Built for people who just want to know where their money goes.</p>
+                    <p>A lightweight web application to track daily spending, stay within budget, and export reports
+                        when
+                        needed. No hidden costs, no credit card required, free forever.</p>
+                </div>
+            </section>
+
+            <section class="content-section reveal">
+                <div class="section-marker">B</div>
+                <div class="section-body">
+                    <h2>Screenshots</h2>
+                    <div class="screenshot-grid">
+                        <div class="screenshot-item">
+                            <div class="screenshot-frame">
+                                <img src="assets/landing1.png" alt="Landing Page"
+                                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                                <div class="screenshot-fallback">
+                                    <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+                                        <rect x="2" y="5" width="28" height="20" rx="3" stroke="#a5d6a7"
+                                            stroke-width="1.4" />
+                                        <circle cx="10" cy="13" r="3" stroke="#a5d6a7" stroke-width="1.2" />
+                                        <path d="M2 20l7-5 6 4 4-3 11 7" stroke="#a5d6a7" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Landing Page</span>
+                                </div>
+                            </div>
+                            <div class="screenshot-caption">Landing Page</div>
+                        </div>
+                        <div class="screenshot-item">
+                            <div class="screenshot-frame">
+                                <img src="assets/dashboard.png" alt="Dashboard"
+                                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                                <div class="screenshot-fallback">
+                                    <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+                                        <rect x="2" y="5" width="28" height="20" rx="3" stroke="#a5d6a7"
+                                            stroke-width="1.4" />
+                                        <rect x="5" y="14" width="6" height="8" rx="1" stroke="#a5d6a7"
+                                            stroke-width="1.2" />
+                                        <rect x="13" y="10" width="6" height="12" rx="1" stroke="#a5d6a7"
+                                            stroke-width="1.2" />
+                                        <rect x="21" y="16" width="6" height="6" rx="1" stroke="#a5d6a7"
+                                            stroke-width="1.2" />
+                                    </svg>
+                                    <span>Dashboard</span>
+                                </div>
+                            </div>
+                            <div class="screenshot-caption">Dashboard</div>
+                        </div>
+                        <div class="screenshot-item">
+                            <div class="screenshot-frame">
+                                <img src="assets/transaksi.png" alt="Transactions"
+                                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                                <div class="screenshot-fallback">
+                                    <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+                                        <rect x="2" y="5" width="28" height="20" rx="3" stroke="#a5d6a7"
+                                            stroke-width="1.4" />
+                                        <path d="M6 11h20M6 16h14M6 21h10" stroke="#a5d6a7" stroke-width="1.2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    <span>Transactions</span>
+                                </div>
+                            </div>
+                            <div class="screenshot-caption">Transactions</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section reveal">
+                <div class="section-marker">C</div>
+                <div class="section-body">
+                    <h2>Features</h2>
+                    <ul class="article-list">
+                        <li><strong>Record Expenses —</strong> Log any expense in seconds with description, amount, and
+                            category.</li>
+                        <li><strong>Edit Anytime —</strong> Made a mistake? Edit or delete any record at any time.</li>
+                        <li><strong>Monthly Budget —</strong> Set your monthly budget and see remaining balance in
+                            real-time.</li>
+                        <li><strong>Calendar View —</strong> Browse expenses by date using an interactive calendar.</li>
+                        <li><strong>Export to Excel —</strong> Download your monthly report as an Excel file, ready to
+                            share or save.</li>
+                        <li><strong>Authentication —</strong> Secure register and login system.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content-section reveal">
+                <div class="section-marker">D</div>
+                <div class="section-body">
+                    <h2>Tech Stack</h2>
+                    <div class="table-wrap">
+                        <table class="stack-table">
+                            <thead>
+                                <tr>
+                                    <th>Technology</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="stack-name">Laravel</span></td>
+                                    <td>PHP Framework</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="stack-name">MySQL</span></td>
+                                    <td>Database</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="stack-name">PHP</span></td>
+                                    <td>Backend Language</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="stack-name">Maatwebsite Excel</span></td>
+                                    <td>Export to Excel</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-name">
+            Neli Fauziyah
+            <span>Web Developer &amp; UI/UX Enthusiast</span>
+        </div>
+        <div class="footer-copy">&copy; 2026 Neli Fauziyah. Designed &amp; built with passion.</div>
+    </footer>
+
+    <script src="js/btc_store.js"></script>
+</body>
+
+</html>

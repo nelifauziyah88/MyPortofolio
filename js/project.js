@@ -2,7 +2,10 @@ const cursor = document.getElementById("cursor");
 const cursorRing = document.getElementById("cursorRing");
 
 if (cursor && cursorRing) {
-  let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+  let mouseX = 0,
+    mouseY = 0,
+    ringX = 0,
+    ringY = 0;
 
   document.addEventListener("mousemove", (e) => {
     mouseX = e.clientX;
@@ -62,12 +65,15 @@ const revealObserver = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const delay = entry.target.dataset.delay || 0;
-        setTimeout(() => entry.target.classList.add("visible"), parseInt(delay));
+        setTimeout(
+          () => entry.target.classList.add("visible"),
+          parseInt(delay),
+        );
         revealObserver.unobserve(entry.target);
       }
     });
   },
-  { threshold: 0.1 }
+  { threshold: 0.1 },
 );
 revealEls.forEach((el) => revealObserver.observe(el));
 
@@ -86,6 +92,27 @@ filterBtns.forEach((btn) => {
         card.classList.add("visible");
       }
     });
+  });
+});
+
+const projectLinks = {
+  "BTC Store": "btc_store.html",
+  "Venus Cars": "venus_cars.html",
+  "MyInternship": "myinternship.html",
+  "Geomarketia": "geomarketia.html",
+  "KadoKita": "kadokita.html",
+  "CatetCash": "catetcash.html",
+  "DumpIt": "dumpit.html",
+};
+
+document.querySelectorAll(".project-card").forEach((card) => {
+  card.style.cursor = "pointer";
+  card.addEventListener("click", (e) => {
+    if (e.target.closest("a, button")) return;
+    const title = card.querySelector(".card-title")?.textContent.trim();
+    if (projectLinks[title]) {
+      window.location.href = projectLinks[title];
+    }
   });
 });
 

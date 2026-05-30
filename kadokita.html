@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KadoKita — Project</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23f0faf0'/><text x='6' y='50' font-family='Georgia,serif' font-size='44' font-weight='700' fill='%23388e3c' letter-spacing='-3'>NF</text></svg>" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/btc_store.css" />
+    <style>
+        .demo-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.2rem 1.4rem;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(56, 142, 60, 0.06), rgba(77, 182, 172, 0.06));
+            border: 1.5px solid var(--green-border);
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            text-decoration: none;
+            transition: all 0.25s;
+        }
+
+        .demo-card:hover {
+            border-color: var(--green-mid);
+            box-shadow: 0 4px 16px rgba(56, 142, 60, 0.12);
+            transform: translateY(-1px);
+        }
+
+        .demo-card-icon {
+            width: 44px;
+            height: 44px;
+            min-width: 44px;
+            background: linear-gradient(135deg, var(--green-light), var(--green));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .demo-card-text {
+            flex: 1;
+        }
+
+        .demo-card-label {
+            font-family: "DM Mono", monospace;
+            font-size: 0.68rem;
+            color: var(--muted-light);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 2px;
+        }
+
+        .demo-card-url {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--green-dark);
+        }
+
+        .demo-card-arrow {
+            color: var(--green-mid);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                <text x="4" y="34" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#388e3c"
+                    letter-spacing="-2">NF</text>
+                <path d="M6 38 Q22 34 38 38" fill="none" stroke="#66bb6a" stroke-width="0.9" stroke-linecap="round" />
+            </svg>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="organization.html">Organization</a></li>
+            <li><a href="project.html" class="active">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+
+    <main class="page-wrapper">
+        <div class="article-container">
+
+            <a href="project.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M10 3L5 8l5 5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Back to Projects
+            </a>
+
+            <header class="article-header">
+                <div class="header-badges">
+                    <span class="badge badge-cat">Personal Project</span>
+                    <span class="badge badge-status">Completed</span>
+                </div>
+                <h1 class="article-title">Kado<em>Kita</em></h1>
+                <p class="article-lead">A website for creating online greeting gifts that can be shared with friends,
+                    family, coworkers, or a partner. Create a special digital message and share it easily via link.</p>
+                <div class="header-tags">
+                    <span class="tech-chip">HTML</span>
+                    <span class="tech-chip">CSS</span>
+                    <span class="tech-chip">JavaScript</span>
+                </div>
+                <div class="header-actions">
+                    <a href="https://kadokita.my.id/" target="_blank" class="action-btn btn-green">
+                        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="8" cy="8" r="6.5" />
+                            <path d="M6.5 5.5l4 2.5-4 2.5V5.5z" fill="currentColor" stroke="none" />
+                        </svg>
+                        Live Website
+                    </a>
+                </div>
+            </header>
+
+            <div class="meta-strip">
+                <div class="meta-item">
+                    <span class="meta-label">Type</span>
+                    <span class="meta-value">Personal Project</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                    <span class="meta-label">Platform</span>
+                    <span class="meta-value">Web</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                    <span class="meta-label">Sharing</span>
+                    <span class="meta-value">Via Link</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                    <span class="meta-label">Status</span>
+                    <span class="meta-value">Live</span>
+                </div>
+            </div>
+
+            <div class="poster-block reveal">
+                <p class="poster-label">Preview</p>
+                <div class="poster-frame">
+                    <img src="assets/kadokita.png" alt="KadoKita Preview"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                    <div class="poster-fallback">
+                        <svg viewBox="0 0 64 64" fill="none" width="48" height="48">
+                            <rect x="6" y="12" width="52" height="36" rx="5" stroke="#66bb6a" stroke-width="1.6" />
+                            <circle cx="22" cy="27" r="5" stroke="#a5d6a7" stroke-width="1.4" />
+                            <path d="M6 40l14-10 10 8 8-7 18 13" stroke="#66bb6a" stroke-width="1.4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>assets/kadokita.png</span>
+                        <span class="fallback-note">Website preview screenshot</span>
+                    </div>
+                </div>
+                <p class="poster-caption">KadoKita — Landing Page</p>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <section class="content-section reveal">
+                <div class="section-marker">A</div>
+                <div class="section-body">
+                    <h2>General Description</h2>
+                    <p><strong>KadoKita</strong> is a website for creating online greeting gifts that can be shared with
+                        friends, family, coworkers, or a partner. With KadoKita, you can craft a special digital message
+                        and share it easily with anyone via link.</p>
+                    <p>This website is designed so that anyone can effortlessly express their love and care digitally,
+                        with no technical skills required.</p>
+
+                    <a href="https://kadokita.my.id/" target="_blank" class="demo-card">
+                        <div class="demo-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                                    stroke="#fff" stroke-width="1.5" />
+                                <path
+                                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                                    stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="demo-card-text">
+                            <div class="demo-card-label">Try it live</div>
+                            <div class="demo-card-url">kadokita.my.id</div>
+                        </div>
+                        <div class="demo-card-arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="content-section reveal">
+                <div class="section-marker">B</div>
+                <div class="section-body">
+                    <h2>Key Features</h2>
+                    <ul class="article-list">
+                        <li><strong>Create Online Greetings:</strong> build a personalized gift message online quickly
+                            and easily.</li>
+                        <li><strong>Simple Interface:</strong> an intuitive and user-friendly design that anyone can use
+                            without guidance.</li>
+                        <li><strong>Share via Link:</strong> once created, the greeting can be instantly shared with
+                            anyone through a link.</li>
+                        <li><strong>Perfect for Any Occasion:</strong> birthdays, weddings, graduations, holidays, and
+                            other special moments.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-name">
+            Neli Fauziyah
+            <span>Web Developer &amp; UI/UX Enthusiast</span>
+        </div>
+        <div class="footer-copy">&copy; 2026 Neli Fauziyah. Designed &amp; built with passion.</div>
+    </footer>
+
+    <script src="js/btc_store.js"></script>
+</body>
+
+</html>
